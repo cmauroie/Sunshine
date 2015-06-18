@@ -2,32 +2,32 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Desarrollo1\Documents\GitHub\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\classes.jar"
+        jar="C:\Users\Mauricio\Documents\GitHub\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
-        <dex dex="C:\Users\Desarrollo1\Documents\GitHub\Sunshine\app\build\intermediates\pre-dexed\debug\classes-5a8df37233aa2216130da1a8dcf0badc6fa4168e.jar" />
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Mauricio\Documents\GitHub\Sunshine\app\build\intermediates\pre-dexed\debug\classes-d83611d008b6b97ed2fc018a7a829c2820f399b6.jar" />
     </item>
     <item
-        jar="C:\Users\Desarrollo1\Documents\GitHub\Sunshine\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.1.1\classes.jar"
+        jar="C:\Users\Mauricio\Documents\GitHub\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
-        <dex dex="C:\Users\Desarrollo1\Documents\GitHub\Sunshine\app\build\intermediates\pre-dexed\debug\classes-de0b651428696f3de55f4103ffd7368c54c44bd1.jar" />
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Mauricio\Documents\GitHub\Sunshine\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-84b28cb3cfb927620bf5a59c5964a86d98e40573.jar" />
     </item>
     <item
-        jar="C:\Users\Desarrollo1\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.1.1\support-annotations-22.1.1.jar"
+        jar="C:\Users\Mauricio\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
-        <dex dex="C:\Users\Desarrollo1\Documents\GitHub\Sunshine\app\build\intermediates\pre-dexed\debug\support-annotations-22.1.1-65332d82e523b1a41a575b9911a305951a4b684e.jar" />
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Mauricio\Documents\GitHub\Sunshine\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-258d8c9b9c39836f5b3d3cffb092491b5d1fa11f.jar" />
     </item>
     <item
-        jar="C:\Users\Desarrollo1\Documents\GitHub\Sunshine\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.1.1\libs\internal_impl-22.1.1.jar"
+        jar="C:\Users\Mauricio\Documents\GitHub\Sunshine\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
         jumboMode="false"
         revision="21.1.2"
-        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
-        <dex dex="C:\Users\Desarrollo1\Documents\GitHub\Sunshine\app\build\intermediates\pre-dexed\debug\internal_impl-22.1.1-f678b5bd66eb6251d122c9d8be1d5344e5f5506d.jar" />
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="C:\Users\Mauricio\Documents\GitHub\Sunshine\app\build\intermediates\pre-dexed\debug\classes-266b0ffb7f4c477795fe4cb920841b51149c1099.jar" />
     </item>
 
 </items>

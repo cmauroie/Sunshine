@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
@@ -26,6 +29,36 @@ import java.util.List;
 public class ForecastFragment extends Fragment {
 
     public ForecastFragment() {
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //Add this line in order for this fragment to handle menu events.
+        setHasOptionsMenu(true);
+    }
+
+    @Override
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        inflater.inflate(R.menu.forecastfragment, menu);
+        //super.onCreateOptionsMenu(menu, inflater);
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        //Handle action bar item clicks here. The action bar will
+        //automatically handle clicks on the Home/Up button, so long
+        //as you specify a parent activity in AndridManifest.xml
+
+        int id = item.getItemId();
+        if(id==R.id.action_refresh){
+            new FetchWeatherTask().execute();
+            return true;
+
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -72,10 +105,6 @@ public class ForecastFragment extends Fragment {
 
         ListView listView = (ListView)rootView.findViewById(R.id.listview_forecast);
         listView.setAdapter(mForecastAdapter);
-
-
-
-
 
         return rootView;
     }
