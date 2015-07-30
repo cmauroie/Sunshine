@@ -35,6 +35,8 @@ import java.util.List;
  */
 public class ForecastFragment extends Fragment {
 
+    public ArrayAdapter<String> mForecastAdapter;
+
     public ForecastFragment() {
     }
 
@@ -104,7 +106,7 @@ public class ForecastFragment extends Fragment {
          * list of data                   weekForecast
          */
 
-        ArrayAdapter<String> mForecastAdapter = new ArrayAdapter<String>(
+        mForecastAdapter = new ArrayAdapter<String>(
                 getActivity(),
                 R.layout.list_item_forecast2,
                 R.id.list_item_forecast_textview,
@@ -116,7 +118,7 @@ public class ForecastFragment extends Fragment {
         return rootView;
     }
 
-    public class FetchWeatherTask extends AsyncTask<String,Void,String []> {
+    public class FetchWeatherTask extends AsyncTask<String,Void,String[]> {
 
         private final String LOG_TAG = FetchWeatherTask.class.getSimpleName();
 
@@ -311,14 +313,25 @@ public class ForecastFragment extends Fragment {
                     }
                 }
             }
-            try {
+           try {
                 return getWeatherDataFromJson(forecastJsonStr, numDays);
             } catch (JSONException e) {
-                Log.e(LOG_TAG, e.getMessage(), e);
-                e.printStackTrace();
-        }
+               Log.e(LOG_TAG, e.getMessage(), e);
+               e.printStackTrace();
+           }
         // This will only happen if there was an error getting or parsing the forecast.
         return null;
+        }
+
+        @Override
+        protected void onPostExecute(String[] result) {
+            if(result!=null){
+              mForecastAdapter.clear();
+                for(String dayForecastStr : result){
+                    mForecastAdapter.add(dayForecastStr);
+                }
+            }
+        //super.onPostExecute(strings);
         }
     }
 }
